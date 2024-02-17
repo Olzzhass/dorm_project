@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_inf201.StudentLoginPageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="508.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="508.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/LoginPage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="LoginButton" layoutX="198.0" layoutY="347.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #57A6DA; -fx-background-radius: 50;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="email" layoutX="136.0" layoutY="209.0" prefHeight="31.0" prefWidth="230.0" promptText="Student Email" style="-fx-background-radius: 50;" />
+            <PasswordField fx:id="passwordField" layoutX="136.0" layoutY="271.0" prefHeight="31.0" prefWidth="230.0" promptText="Student password" style="-fx-background-radius: 50;" />
+            <Line fx:id="password_Indicator" endX="230.0" layoutX="136.0" layoutY="315.0" stroke="#57a6da" />
+            <Line fx:id="login_Indicator" endX="230.0" layoutX="136.0" layoutY="255.0" stroke="#57a6da" />
+            <Button fx:id="SignUpButton" layoutX="357.0" layoutY="39.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #57A6DA; -fx-background-radius: 50;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="Forgot_password" accessibleRole="BUTTON" layoutX="329.0" layoutY="446.0" onMouseClicked="#initialize" onMouseDragEntered="#initialize" onMouseDragExited="#initialize" onMouseEntered="#initialize" onMouseExited="#initialize" text="Forgot password" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="802.0" layoutY="8.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #57A6DA; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

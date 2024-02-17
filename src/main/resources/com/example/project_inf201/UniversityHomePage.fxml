@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_inf201.UniversityHomePageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="508.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView disable="true" fitHeight="508.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/UniversityHomePage.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="University" layoutX="66.0" layoutY="234.0" prefHeight="20.0" prefWidth="250.0" text="University : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="occupied" layoutX="66.0" layoutY="264.0" prefHeight="20.0" prefWidth="250.0" text="Number of occupied places : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="available" layoutX="66.0" layoutY="294.0" prefHeight="9.0" prefWidth="250.0" text="Number of available places : ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="802.0" layoutY="8.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #9BE6FD; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="StudentsInfo" editable="false" layoutX="496.0" layoutY="118.0" prefHeight="311.0" prefWidth="303.0" style="-fx-border-color: #A9EAFE; -fx-border-insets: 5; -fx-background-radius: 15; -fx-background-color: #A9EAFE;" text="Students:&#10;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

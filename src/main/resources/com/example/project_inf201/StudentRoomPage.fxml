@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_inf201.StudentRoomPageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="508.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="508.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/StudentRoomPage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ChooseButton" layoutX="138.0" layoutY="353.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #9BE6FD; -fx-background-radius: 50;" text="Choose" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="RoomNumber" layoutX="137.0" layoutY="181.0" prefHeight="26.0" prefWidth="107.0" text="Room : №XXX">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="cnt" layoutX="143.0" layoutY="202.0" prefHeight="88.0" prefWidth="96.0" text="0/0" textAlignment="CENTER" textFill="#0972bf">
+               <font>
+                  <Font name="System Bold" size="60.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="802.0" layoutY="8.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #9BE6FD; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="SendButton" layoutX="137.0" layoutY="372.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #9BE6FD; -fx-background-radius: 50;" text="Send" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ConfirmationCode" layoutX="110.0" layoutY="328.0" prefHeight="31.0" promptText="Confirmation code" style="-fx-background-radius: 50;" visible="false" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

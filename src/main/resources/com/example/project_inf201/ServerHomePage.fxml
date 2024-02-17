@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_inf201.ServerHomePageController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="508.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="508.0" fitWidth="900.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/ServerHomePage.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ChooseButton" layoutX="216.0" layoutY="298.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #57A6DA; -fx-background-radius: 50;" text="Choose" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="Universities" layoutX="161.0" layoutY="237.0" prefHeight="31.0" prefWidth="230.0" style="-fx-background-radius: 50; -fx-background-color: #FFFFFF; -fx-border-color: #B6B6B6; -fx-border-radius: 50;" />
+            <TextArea fx:id="StudentsField" layoutX="538.0" layoutY="98.0" prefHeight="309.0" prefWidth="306.0" style="-fx-background-color: #57A6DA; -fx-border-insets: 6; -fx-border-color: #57A6DA; -fx-background-radius: 15;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextArea>
+            <Button fx:id="BackButton" layoutX="802.0" layoutY="8.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #57A6DA; -fx-background-radius: 50;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
